@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Table</title>
+
+</head>
+<style>
+    .box {
+
+        width: 300px;
+        border: 5px solid black;
+        padding: 50px;
+        margin: 20px;
+    }
+
+
+    i {
+        background-color: #ddd;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+
+
+    }
+
+    #table {
+        margin-left: 40px;
+
+    }
+
+    #table {
+        padding: 5px;
+
+    }
+
+    input,
+    button {
+        margin-left: 20px;
+        margin-bottom: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 15px;
+        text-transform: capitalize;
+    }
+
+    button {
+
+        align-items: center;
+        text-align: center;
+    }
+
+    button:hover {
+        color: white;
+        background-color: rgb(70, 182, 18);
+    }
+
+    input:focus {
+        outline: none;
+        border: 2px solid rgb(0, 4, 128);
+    }
+</style>
+
+
+
+
+<body>
+    <div class="box">
+        <input type="number" id="num" placeholder="Enter any number">
+            <button onclick="print_table()">Display</button>
+        
+
+        <h3 id="table"></h3>
+</body>
+<script>
+
+    function print_table() {
+        let math_table = document.getElementById("table");
+        let n = document.getElementById("num").value;
+        math_table.innerHTML = ``;
+        for (let i = 1; i <= 10; i++) {
+            let newelment = document.createElement("p");
+            newelment.innerHTML = (`${n} &cross; ${i} = ${n * i}`);
+            math_table.appendChild(newelment);
+        }
+    }
+
+
+</script>
+</div>
+
+</html>
