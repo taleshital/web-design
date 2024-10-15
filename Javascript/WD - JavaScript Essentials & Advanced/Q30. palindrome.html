@@ -1,0 +1,19 @@
+//Q.30 Accept 3 numbers from user using while loop and check each numbers palindrome
+
+def is_palindrome(num):
+# Convert the number to string for easy comparison
+num_str = str(num)
+# Check if the string is equal to its reverse
+return num_str == num_str[::-1]
+
+# Initialize variables
+count = 0
+numbers = []
+
+# Loop to get 3 numbers from the user
+while count < 3: try: num=int(input(f"Enter number {count + 1}: "))
+        numbers.append(num)
+        count += 1
+    except ValueError:
+        print(" Please enter a valid integer.") # Check each number for palindrome for i, num in enumerate(numbers): if
+    is_palindrome(num): print(f"Number {num} is a palindrome.") else: print(f"Number {num} is not a palindrome.")

@@ -1,0 +1,6 @@
+
+
+
+Q1. What's the first name of JavaScript and  what is official name of JavaScript?
+Q2. difference between setTimeout  and seInterval in JS.
+Q3. what is array and were use it?
